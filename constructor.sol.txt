@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.7.0 <0.9.0;
+
+contract ejemplo_constructor {
+
+   address public myadress = msg.sender;
+   int public number;
+
+constructor (address __someAdress, int _number){
+myadress = __someAdress;
+number= _number++;
+
+}
+
+    function grabar_mi_direc(address _myDireccion) public{
+    myadress =_myDireccion;
+    number++;
+         }
+
+    function grgabarmidireccionpormensajesender() public {
+     myadress = msg.sender;
+        number++;
+        }
+    }
